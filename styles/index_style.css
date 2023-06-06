@@ -1,0 +1,98 @@
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    cursor: pointer;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s; 
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.twin-parent {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  color: #53aecc;
+}
+
+.twin {
+  display: flex;
+}
+
+.icon-container {
+  text-align: center;
+  align-items: flex-start;
+  margin: 20px 80px;
+}
+
+.icon-container p {
+  text-align: center;
+}
+
+.top-separator {
+  margin:100px
+}
+
+
+@media screen and (max-width: 800px) {
+  .twin-parent {
+    flex-direction: column;
+  }
+
+  .top-separator {
+    margin: 180px;
+  }
+
+  .twin {
+    display: grid;
+  }
+
+  .icon-container {
+    flex-direction: column;
+    margin: 10px 5px;
+  }
+
+  .icon-container p {
+    margin-left: 0px;
+  }
+}
+

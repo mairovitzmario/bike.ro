@@ -1,0 +1,171 @@
+.items-container {
+  background-color: #4aa4c2;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product .name {
+  font-weight: bold;
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.product .price-qnt {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.product .price {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.product .count {
+  background-color: #4aa4c27e;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  margin-right: 10px;
+  color: white;
+  font-size: 32px;
+  border-radius: 5px;
+}
+
+.product .remove-btn {
+  padding: 12px 12px;
+  margin-left: 10px;
+  background-color: #f37575;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+.product .remove-btn:hover {
+  background-color: #e46767;  
+}
+
+.product .qnt {
+  display: flex;
+  align-items: center;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.product .qnt label {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.product .qnt input {
+  text-align: center;
+  width: 3ch;
+  font-size: 20px;
+  border: 1px solid #4aa4c29d;
+  border-radius: 5px;
+}
+
+.checkout-section {
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+.checkout-section h1 {
+  margin-bottom: 10px;
+}
+
+.checkout-section button {
+  align-self: flex-end;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  color: #52b1d1;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+
+
+
+.checkout-section p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+
+@media (max-width: 800px) {
+  .product .name {
+    font-size: 20px;
+    margin-right: 5px;
+    flex-basis: 100%;
+  }
+
+  .product .price-qnt {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .product .price {
+    font-size: 16px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .product .remove-btn {
+    margin-left: 5px;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+
+  .product .qnt {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .product .qnt label {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  .product .qnt input {
+    width: 2.5ch;
+    font-size: 16px;
+  }
+
+  .product .count {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 10px;
+    color: white;
+    border-radius: 3px;
+    flex-shrink: 0; 
+  }
+}

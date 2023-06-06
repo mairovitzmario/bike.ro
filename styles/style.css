@@ -1,0 +1,11 @@
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+ }
+
+* {
+    font-family: 'Comfortaa', cursive; /*https://fonts.google.com/specimen/Barlow?preview.text=ăîâșț&preview.text_type=custom*/
+    box-sizing: border-box;
+ }
+ 
